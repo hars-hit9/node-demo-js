@@ -12,3 +12,15 @@ function show2({
     console.log(id);
 }
 show2({});
+
+const abc=(num)=>{
+    console.log(this)
+    return num+2;
+}
+abc(5);
+
+const ab=function(num){
+    console.log(this)
+    return num+2;
+}
+ab(5);
